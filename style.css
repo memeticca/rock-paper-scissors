@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Zen+Dots&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    background-color: black;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Zen Dots', cursive;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+}
+
+.game-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-info {
+    max-width: 200px;
+    background-color: #303030;
+    border-radius: 10px;
+}
+
+.card-info>img {
+    max-width: 100%;
+}
+
+.health {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.health img {
+    max-width: 30px;
+}
+
+.moves-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.move {
+    max-width: 50px;
+    padding: 4px;
+    background-color: #303030;
+    border: none;
+    border-radius: 20px;
+    transition: all .3s ease 0s;
+}
+
+.move>img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.player .move:hover {
+    box-shadow: .1px .1px 20px rgba(255, 255, 255, 0.4);
+}

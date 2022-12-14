@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rock, Paper, Scissors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="game.js" async defer></script>
+
+    <main>
+        <div class="header">
+            <h1>Rock, Paper, Scissors</h1>
+            <p>The First to Defeat the Other Wins!</p>
+        </div>
+
+        <div class="game-container">
+            <div class="player card">
+                <div class="card-info">
+                    <img id="player-icon" src="images/person.png">
+                    <h3>YOU</h3>
+                    <div class="health">
+                        <img src="images/heart.png">
+                        <h3 id="player-health">100</h3>
+                    </div>
+                </div>
+
+                <div class="moves-container">
+                    <button id="rock" class="move"><img src="images/rock.png"></button>
+                    <button id="paper" class="move"><img src="images/paper.png"></button>
+                    <button id="scissors" class="move"><img src="images/scissors.png"></button>
+                </div>
+            </div>
+
+            <h1>VS</h1>
+
+            <div class="computer card">
+                <div class="card-info">
+                    <img id="computer-icon" src="images/computer.png">
+                    <h3>COMPUTER</h3>
+                    <div class="health">
+                        <img src="images/heart.png">
+                        <h3 id="computer-health">100</h3>
+                    </div>
+                </div>
+
+                <div class="moves-container">
+                    <button id="rock" class="move"><img src="images/rock.png"></button>
+                    <button id="paper" class="move"><img src="images/paper.png"></button>
+                    <button id="scissors" class="move"><img src="images/scissors.png"></button>
+                </div>
+            </div>
+        </div>
+
+        <div id="game-results"></div>
+    </main>
+</body>
+
+</html>
